@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Nome Azienda – Noleggio pullman con conducente</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home-a.css" />
+  </head>
+  <body>
+    <div class="utility">
+      <a href="tel:+390350000000"><i class="fa-solid fa-phone"></i> 035 000 0000</a
+      ><a href="mailto:info@esempio.it"><i class="fa-solid fa-envelope"></i> info@esempio.it</a
+      ><span>Preventivo entro 24 ore</span>
+    </div>
+    <header class="nav">
+      <a class="logo" href="#"><i class="fa-solid fa-bus"></i>Nome Azienda</a>
+      <nav>
+        <a href="#servizi">Servizi</a><a href="#flotta">Flotta</a><a href="#chi-siamo">Chi siamo</a
+        ><a href="#contatti">Contatti</a>
+      </nav>
+      <a class="cta" href="#preventivo">Preventivo</a>
+    </header>
+    <section class="hero">
+      <div class="hero-t">
+        <h1>Viaggiare in gruppo è un lavoro di precisione.</h1>
+        <p>
+          Pullman e minibus con conducente per scuole, aziende e associazioni. Puntualità, sicurezza
+          e un referente unico dalla richiesta al ritorno.
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i>Mezzi revisionati e assicurati</li>
+          <li><i class="fa-solid fa-circle-check"></i>Autisti professionisti</li>
+          <li><i class="fa-solid fa-circle-check"></i>Preventivo chiaro, senza sorprese</li>
+        </ul>
+      </div>
+      <div class="hero-i"><img src="img/granturismo.png" alt="Pullman granturismo" /></div>
+    </section>
+    <div class="quote-wrap" id="preventivo">
+      <h2>Richiedi un preventivo</h2>
+      <form class="quote" action="mailto:info@esempio.it" method="post" enctype="text/plain">
+        <label>Partenza<input name="partenza" placeholder="Es. Bergamo" /></label
+        ><label>Destinazione<input name="destinazione" placeholder="Es. Lago di Garda" /></label
+        ><label>Data<input type="date" name="data" /></label
+        ><label>Passeggeri<input type="number" min="1" name="passeggeri" placeholder="40" /></label
+        ><button type="submit">Richiedi preventivo</button>
+      </form>
+    </div>
+    <section class="numeri">
+      <div><b>30+</b>anni di esperienza</div>
+      <div><b>25</b>mezzi in flotta</div>
+      <div><b>19–54</b>posti disponibili</div>
+      <div><b>24 h</b>per il preventivo</div>
+    </section>
+    <section id="servizi" class="sez">
+      <h2>I nostri servizi</h2>
+      <ul class="servizi">
+        <li>
+          <i class="fa-solid fa-school"></i>
+          <h3>Gite scolastiche</h3>
+          <p>Uscite didattiche e viaggi d’istruzione con autisti esperti.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-building"></i>
+          <h3>Trasporto aziendale</h3>
+          <p>Navette per dipendenti, trasferte, fiere e congressi.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-mountain-sun"></i>
+          <h3>Tour di gruppo</h3>
+          <p>Escursioni in giornata e viaggi di più giorni, in Italia e in Europa.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-church"></i>
+          <h3>Pellegrinaggi</h3>
+          <p>Santuari e mete religiose, con soste programmate.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <h3>Cerimonie ed eventi</h3>
+          <p>Matrimoni, concerti, trasferte sportive.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-plane-departure"></i>
+          <h3>Transfer aeroporto</h3>
+          <p>Malpensa, Orio al Serio, Linate, anche di notte.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="flotta" class="sez grigio">
+      <h2>La flotta</h2>
+      <div class="flotta">
+        <article>
+          <img src="img/minibus.png" alt="Minibus" style="width: 61%" />
+          <h3>Minibus</h3>
+          <p class="posti">Fino a 19 posti</p>
+          <ul>
+            <li><i class="fa-solid fa-snowflake"></i>Aria condizionata</li>
+            <li><i class="fa-solid fa-plug"></i>Prese USB</li>
+          </ul>
+        </article>
+        <article>
+          <img src="img/midibus.png" alt="Midibus" style="width: 74%" />
+          <h3>Midibus</h3>
+          <p class="posti">Fino a 35 posti</p>
+          <ul>
+            <li><i class="fa-solid fa-snowflake"></i>Aria condizionata</li>
+            <li><i class="fa-solid fa-chair"></i>Sedili reclinabili</li>
+          </ul>
+        </article>
+        <article>
+          <img src="img/granturismo.png" alt="Granturismo" style="width: 100%" />
+          <h3>Granturismo</h3>
+          <p class="posti">Fino a 54 posti</p>
+          <ul>
+            <li><i class="fa-solid fa-wifi"></i>Wi‑Fi a bordo</li>
+            <li><i class="fa-solid fa-restroom"></i>Toilette e frigo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="chi-siamo" class="banda">
+      <div>
+        <h2>Un’azienda di famiglia, mezzi sempre in ordine.</h2>
+        <p>Dal primo contatto al rientro, parli con le stesse persone.</p>
+      </div>
+      <a class="cta" href="#preventivo">domandaci</a>
+    </section>
+    <div id="contatti"></div>
+    <footer>
+      <div class="fcol">
+        <b>Nome Azienda s.r.l.</b>
+        <p>
+          Via Esempio 1, 24100 Bergamo<br />P.IVA 00000000000<br />Licenza noleggio autobus n. 000
+        </p>
+      </div>
+      <div class="fcol">
+        <b>Servizi</b>
+        <p>
+          Gite scolastiche<br />Trasporto aziendale<br />Tour e pellegrinaggi<br />Cerimonie ed
+          eventi
+        </p>
+      </div>
+      <div class="fcol">
+        <b>Contatti</b>
+        <p>035 000 0000<br />info@esempio.it<br />Lun–Ven 8:00–18:00</p>
+      </div>
+      <p class="copy">© Nome Azienda · Pagina di prova</p>
+    </footer>
+  </body>
+</html>
