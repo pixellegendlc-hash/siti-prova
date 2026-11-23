@@ -50,8 +50,19 @@
         <label>Partenza<input name="partenza" placeholder="Es. Bergamo" /></label
         ><label>Destinazione<input name="destinazione" placeholder="Es. Lago di Garda" /></label
         ><label>Data<input type="date" name="data" /></label
-        ><label>Passeggeri<input type="number" min="1" name="passeggeri" placeholder="40" /></label
-        ><button type="submit">Richiedi preventivo</button>
+        ><label>Passeggeri<input type="number" min="1" name="passeggeri" placeholder="40" /></label>
+        <div class="tappe" id="tappe">
+          <div class="tappa">
+            <label
+              ><span class="t">Tappe <small>(non obbligatorio)</small></span
+              ><input name="tappa1" placeholder="Es. Sosta a Verona"
+            /></label>
+            <button type="button" class="piu" aria-label="Aggiungi un’altra tappa">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <button type="submit">Richiedi preventivo</button>
       </form>
     </div>
     <section class="numeri">
@@ -132,7 +143,7 @@
         <h2>Un’azienda di famiglia, mezzi sempre in ordine.</h2>
         <p>Dal primo contatto al rientro, parli con le stesse persone.</p>
       </div>
-      <a class="cta" href="#preventivo">domandaci</a>
+      <a class="cta" href="#preventivo">Parliamone</a>
     </section>
     <div id="contatti"></div>
     <footer>
@@ -155,5 +166,6 @@
       </div>
       <p class="copy">© Nome Azienda · Pagina di prova</p>
     </footer>
+    <script src="preventivo.js"></script>
   </body>
 </html>
