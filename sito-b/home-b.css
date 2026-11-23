@@ -291,3 +291,98 @@ footer b {
     height: 500px;
   }
 }
+
+/* ---- Modulo preventivo: tappe facoltative + correzioni per telefono ---- */
+body {
+  overflow-x: hidden;
+}
+.quote > * {
+  min-width: 0;
+}
+.quote input {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.9rem;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.tappe {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.tappa {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-end;
+}
+.tappa label {
+  flex: 1;
+  min-width: 0;
+}
+.tappa small {
+  font-weight: 400;
+  opacity: 0.7;
+}
+.quote .piu,
+.quote .meno {
+  flex: none;
+  width: 2.9rem;
+  height: 2.9rem;
+  padding: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+.quote {
+  grid-template-columns: repeat(4, 1fr);
+}
+.quote button[type="submit"] {
+  grid-column: 1/-1;
+  justify-self: start;
+}
+.quote .piu,
+.quote .meno {
+  background: #fff;
+  color: var(--teal);
+  border: 1.5px solid var(--teal);
+  border-radius: 10px;
+}
+.quote .piu:hover,
+.quote .meno:hover {
+  background: var(--arancio);
+  border-color: var(--arancio);
+  color: var(--teal2);
+}
+@media (max-width: 600px) {
+  .nav {
+    gap: 1rem;
+    padding: 0.8rem 4vw;
+  }
+  .cta {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .hero-c {
+    padding: 2.5rem 5vw;
+  }
+  .quote-wrap {
+    margin: -2.4rem 4vw 0;
+    padding: 1.2rem;
+  }
+  .quote {
+    grid-template-columns: 1fr;
+  }
+  .quote button[type="submit"] {
+    justify-self: stretch;
+  }
+  .sez h2 {
+    font-size: 1.8rem;
+  }
+}
