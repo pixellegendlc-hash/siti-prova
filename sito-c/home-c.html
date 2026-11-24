@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Nome Azienda – Pullman per aziende, eventi e gruppi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home-c.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="logo" href="#"><i class="fa-solid fa-bus"></i>Nome Azienda</a>
+      <nav>
+        <a href="#servizi">Servizi</a><a href="#flotta">Flotta</a><a href="#contatti">Contatti</a>
+      </nav>
+      <a class="tel" href="tel:+390350000000"><i class="fa-solid fa-phone"></i> 035 000 0000</a>
+    </header>
+    <section class="hero">
+      <div class="hero-t">
+        <h1>Il trasporto di gruppo che non ti dà pensieri.</h1>
+        <p>
+          Pullman granturismo, midibus e minibus con conducente. Puntuali, curati, pronti a partire
+          quando serve.
+        </p>
+        <img src="img/granturismo.png" alt="Pullman granturismo" />
+      </div>
+      <div class="pannello" id="preventivo">
+        <h2>Preventivo in 24 ore</h2>
+        <form class="quote" action="mailto:info@esempio.it" method="post" enctype="text/plain">
+          <label>Partenza<input name="partenza" placeholder="Es. Bergamo" /></label
+          ><label>Destinazione<input name="destinazione" placeholder="Es. Lago di Garda" /></label
+          ><label>Data<input type="date" name="data" /></label
+          ><label
+            >Passeggeri<input type="number" min="1" name="passeggeri" placeholder="40"
+          /></label>
+          <div class="tappe" id="tappe">
+            <div class="tappa">
+              <label
+                ><span class="t">Tappe <small>(non obbligatorio)</small></span
+                ><input name="tappa1" placeholder="Es. Sosta a Verona"
+              /></label>
+              <button type="button" class="piu" aria-label="Aggiungi un’altra tappa">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit">Richiedi preventivo</button>
+        </form>
+      </div>
+    </section>
+    <section class="numeri">
+      <div><b>30+</b>anni di esperienza</div>
+      <div><b>25</b>mezzi in flotta</div>
+      <div><b>100%</b>mezzi climatizzati</div>
+      <div><b>24/7</b>per urgenze e transfer</div>
+    </section>
+    <section id="servizi" class="sez">
+      <h2>Servizi</h2>
+      <ul class="servizi">
+        <li>
+          <i class="fa-solid fa-school"></i>
+          <h3>Gite scolastiche</h3>
+          <p>Uscite didattiche e viaggi d’istruzione con autisti esperti.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-building"></i>
+          <h3>Trasporto aziendale</h3>
+          <p>Navette per dipendenti, trasferte, fiere e congressi.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-mountain-sun"></i>
+          <h3>Tour di gruppo</h3>
+          <p>Escursioni in giornata e viaggi di più giorni, in Italia e in Europa.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-church"></i>
+          <h3>Pellegrinaggi</h3>
+          <p>Santuari e mete religiose, con soste programmate.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <h3>Cerimonie ed eventi</h3>
+          <p>Matrimoni, concerti, trasferte sportive.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-plane-departure"></i>
+          <h3>Transfer aeroporto</h3>
+          <p>Malpensa, Orio al Serio, Linate, anche di notte.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="flotta" class="sez">
+      <h2>Flotta</h2>
+      <table class="tab">
+        <thead>
+          <tr>
+            <th>Mezzo</th>
+            <th>Posti</th>
+            <th>A bordo</th>
+            <th>Ideale per</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="th" src="img/minibus.png" alt="" />Minibus</td>
+            <td>fino a 19</td>
+            <td><i class="fa-solid fa-snowflake"></i> <i class="fa-solid fa-plug"></i></td>
+            <td>Piccoli gruppi, transfer, trasferte</td>
+          </tr>
+          <tr>
+            <td><img class="th" src="img/midibus.png" alt="" />Midibus</td>
+            <td>fino a 35</td>
+            <td><i class="fa-solid fa-snowflake"></i> <i class="fa-solid fa-chair"></i></td>
+            <td>Gite, eventi, navette aziendali</td>
+          </tr>
+          <tr>
+            <td><img class="th" src="img/granturismo.png" alt="" />Granturismo</td>
+            <td>fino a 54</td>
+            <td>
+              <i class="fa-solid fa-snowflake"></i> <i class="fa-solid fa-wifi"></i>
+              <i class="fa-solid fa-restroom"></i>
+            </td>
+            <td>Viaggi lunghi, tour, pellegrinaggi</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="banda">
+      <h2>Hai già una data in mente?</h2>
+      <a class="btn" href="#preventivo">Richiedi un preventivo</a>
+    </section>
+    <div id="contatti"></div>
+    <footer>
+      <div class="fcol">
+        <b>Nome Azienda s.r.l.</b>
+        <p>
+          Via Esempio 1, 24100 Bergamo<br />P.IVA 00000000000<br />Licenza noleggio autobus n. 000
+        </p>
+      </div>
+      <div class="fcol">
+        <b>Servizi</b>
+        <p>
+          Gite scolastiche<br />Trasporto aziendale<br />Tour e pellegrinaggi<br />Cerimonie ed
+          eventi
+        </p>
+      </div>
+      <div class="fcol">
+        <b>Contatti</b>
+        <p>035 000 0000<br />info@esempio.it<br />Lun–Ven 8:00–18:00</p>
+      </div>
+      <p class="copy">© Nome Azienda · Pagina di prova</p>
+    </footer>
+    <script src="preventivo.js"></script>
+  </body>
+</html>
